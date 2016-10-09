@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="test.Student">
+        <property name="degree" ref="degree" />
+        <property name="name" value="Alex Zhang" />
+    </bean>
+
+    <bean id="degree" class="test.Degree">
+        <property name="school" value="Peking University"/>
+        <property name="publishDate" value="2016-10-20"/>
+    </bean>
+</beans>
